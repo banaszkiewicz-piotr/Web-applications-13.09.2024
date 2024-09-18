@@ -7,10 +7,59 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <title>Web application</title>
     </head>
-    <body>
+    <body class="bg-dark">
         <div class="row">
-            
+            <div class="col-lg-8 bg-primary">
+                <div class="mt-4 mb-4 ms-4 me-4 p-5 bg-warning rounded">
+                    <h2>Welcome</h2>
+
+                </div>
+            </div>
+            <div class="col-lg-4 bg-primary">
+                <div class="btn-group-vertical mb-4 ms-4 me-4 p-5 float-end">
+                    <button class="btn btn-warning" disabled>Search</button>
+                    <button class="btn btn-warning" disabled>Profile</button>
+                    <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">Notifications<span class="badge bg-danger">4</span></button>
+                    <div class="dropdown-menu">
+                        <span class="spinner-border spinner-border-sm"></span> Loading data...
+                    </div>
+                </div>
+            </div>
         </div>
-        <h3>Welcome</h3>
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="progress ms-4 me-4"></div>
+                    <div class="progress-bar" style="width: 58%;"></div>
+                </div>
+                <div class="alert alert-warning ms-4 me-4 mt-4 alert-dismissible">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    Loading page. Please wait
+                </div>
+                <table class="table table-striped table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                        </tr>
+                        <tr>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                        </tr>
+                        <tr>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                            <td><span class="spinner-border spinner-border-sm"></span> Loading data...</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </body>
 </html>
